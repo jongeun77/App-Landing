@@ -1,0 +1,1011 @@
+/* Fontawesome 4.7 */
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+/* XEICON CDN */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+/* Google Web Fonts CDN */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:300,400,500,700,900&display=swap');
+/* font-family: 'Noto Sans KR', sans-serif; */
+
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+/* font-family: 'Raleway', sans-serif; */
+
+/* Google Web Font */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
+/* font-family: 'Montserrat', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+/* font-family: 'Source Sans Pro', sans-serif; */
+
+/* Web fons - NoonNoo */
+@font-face {
+  font-family: 'NEXON Lv2 Gothic';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Reset CSS */
+*{
+  box-sizing: border-box;
+}
+ul,li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: #222;
+}
+button, input{
+  outline:none;
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+  font-weight: normal;
+  line-height: 1.5em;
+}
+/* Defalut CSS */
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: 'NEXON Lv2 Gothic', sans-serif; 
+  font-size: 18px; 
+  line-height: 1.7em;
+  margin: 0; 
+  background-color: #fff;
+  color: #222;
+}
+body.active{
+  overflow: hidden;
+}
+section{
+  padding: 100px 0;
+}
+/* Common CSS */
+
+/* section display */
+/* header{ display: block;}
+.welcome{ display: none;}
+.ceo-access{ display: none;}
+.banner{ display: none;}
+.feature{ display: none;}
+.vision{ display: none;}
+.faq{ display: none;}
+.review{ display: none;}
+.guide{ display: none;}
+.focus{ display: none;}
+.news{ display: none;}
+footer{ display: block;} */
+
+
+/* ##################### Header ##################### */
+header{
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  transition: 0.35s;
+}
+header.active{
+  background-color: #fff;
+  box-shadow: 3px 0 3px rgba(0,0,0,0.1);
+}
+.header-inner{
+  width: 1300px;
+  height: 80px;
+  margin: auto;
+  overflow: hidden;
+  padding: 30px 0 15px;
+}
+.logo{
+  float: left;
+}
+.logo a img{
+  margin-top: -7px;
+}
+.gnb{
+  float: right;
+}
+.gnb a{
+  margin: 10px;
+  font-size: 16px;
+}
+/* ##################### Section : Welcome ##################### */
+.welcome{
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+}
+.slideshow{}
+.welcome-heading{
+  position: absolute;
+  top: 50%;
+  left: 200px;
+  transform: translateY(-50%);
+  width: 750px;
+  text-align: center;
+}
+.welcome-heading span{
+  font-size: 24px;
+}
+.welcome-heading h1{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 60px;
+  margin: 15px 30px;
+  font-weight: 600;
+  line-height: 1.2em;
+}
+.welcome-heading h1 em{
+  display: block;
+  font-style: normal;
+  color: #eb4d4b;
+}
+.welcome-heading p{
+  padding: 0 100px;
+  margin-bottom: 100px;
+}
+.welcome-btns{}
+.btn{
+  display: inline-block;
+  width: 160px;
+  padding: 8px;
+  color: #fff;
+  border-radius: 5px;
+  margin: 5px;
+  transition: 0.5s;
+}
+.btn.start{
+  background-color: #0abde3;
+}
+.btn.guide{
+  background-color: #fff;
+  color: #222;
+}
+.btn:hover { /* btn 하나만 호버하면 된다. */
+  transform: translateY(-10px);
+  box-shadow: 0 5px 5px rgba(0,0,0,0.1);
+}
+.mouse{
+  width: 32px;
+  height: 45px;
+  border: 2px solid #fff;
+  position: absolute;
+  bottom:100px;
+  left: 250px;
+  border-radius: 30px;
+}
+.wheele{
+  width: 3px;
+  height: 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  position: absolute;
+  bottom:10px;
+  left: 12px;
+  animation: wheele 1.5s linear infinite; /* ani를 앱솔루트니까 top 위치로주고3번 나눠서 준다 */
+}
+/* #################### Section : ceo-access################### */
+
+.ceo-access{}
+.ceo-inner{
+  width: 1300px;
+  margin: auto;
+}
+.ceo-content{
+  overflow: hidden;
+  padding: 50px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.ceo-content> div{
+  float: left;
+  width: 50%;
+}
+.ceo-left{
+  padding-right: 30px;
+}
+.ceo-left img{
+  width: 30px;
+  filter: invert(34%) sepia(95%) saturate(1066%) hue-rotate(135deg) brightness(97%) contrast(101%);
+  
+}
+.ceo-left h3{
+  font-size: 22px;
+}
+.ceo-left p{}
+.ceo-left span{}
+.ceo-right>div{
+  float: left;
+  padding: 20px;
+}
+.ceo-msg{
+  text-align: center;
+  width: 60%;
+}
+.ceo-msg h3{
+  font-size: 28px;
+  color:#009b72;
+}
+.ceo-msg h3 big{
+  display: block;
+  font-size: 30px;
+}
+.ceo-msg p{}
+.ceo-photo{
+  width: 40%;
+}
+.ceo-photo img{
+  border-radius: 15px;
+  width: 100%;
+}
+.access-inner{
+  width: 1300px;
+  margin: auto;
+}
+.access-content{
+  overflow:hidden;
+  padding-top: 50px;
+}
+.access-content>div{
+  float: left;
+  width: 50%;
+}
+.access-left{
+  padding-top: 80px;
+  padding-right: 50px;
+}
+.access-left h2{}
+.access-left p{}
+.btn-download{}
+.btn-download a{}
+.access-right{
+  float: right;
+  text-align: center;
+}
+.access-right img{}
+
+/* #################### Section : Banner ################### */
+.banner{
+  background: url(images/wave-line.png) no-repeat right 100px center,linear-gradient(to right, #69acfe, #6eaefd);
+ background-size: 80px;
+ padding: 0;
+}
+.banner-inner{
+  width: 1300px;
+  margin: auto;
+  color: #fff;
+}
+.banner-content{
+  padding: 40px 0;
+  overflow: hidden;
+}
+.banner-content>div{
+  float: left;
+  width: 50%;
+}
+
+.tab-btn{}
+.tab-btn label{
+  display: inline-block;
+  width: 30%;
+  text-align: center;
+  margin: 3px;
+  cursor: pointer;
+}
+.tab-btn em{
+  display: inline-block;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  padding-top: 20px;
+  transition: 0.5s;
+}
+.tab-btn img{
+  width: 60px;
+  filter: invert(68%) sepia(17%) saturate(6455%) hue-rotate(189deg) brightness(101%) contrast(106%);
+}
+
+.tab-btn span{
+  display: block;
+  margin-top: 20px;
+}
+.tabs{
+  padding: 20px 0 0 20px;
+}
+.tab{
+  display: none; /*defalt 안보이게 하고나서 체크드 인접선택자 만듬*/
+}
+.tabs h3{
+  font-size: 32px;
+  font-weight: bold;
+}
+/* Checked function */
+input[name="tabmenu"]{
+  display: none;}
+  
+input[id="tab1"]:checked ~ .tabs .tab1,
+input[id="tab2"]:checked ~ .tabs .tab2,
+input[id="tab3"]:checked ~ .tabs .tab3{ 
+  display: block;}
+
+input[id="tab1"]:checked ~ .tab-btn label:nth-child(1) span,
+input[id="tab2"]:checked ~ .tab-btn label:nth-child(2) span,
+input[id="tab3"]:checked ~ .tab-btn label:nth-child(3) span{
+  color:#34495a;
+}
+
+input[id="tab1"]:checked ~ .tab-btn label:nth-child(1) em,
+input[id="tab2"]:checked ~ .tab-btn label:nth-child(2) em,
+input[id="tab3"]:checked ~ .tab-btn label:nth-child(3) em{
+  background-color:#34495a;
+}
+input[id="tab1"]:checked ~ .tab-btn label:nth-child(1) img,
+input[id="tab2"]:checked ~ .tab-btn label:nth-child(2) img,
+input[id="tab3"]:checked ~ .tab-btn label:nth-child(3) img{
+  filter: invert(); /*white는 그냥 인버트하면 되는듯*/
+}
+
+/* #################### Section : Feature ################### */
+.feature-inner{
+  width: 1300px;
+  margin: auto;
+}
+.headline-share{
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+.headline-share h1:after{
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 5px;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  background: linear-gradient(to right, #69acfe, #3dc9ec)
+}
+.headline-share h1{
+  font-size: 44px;
+  position: relative;
+  padding-bottom: 20px;
+}
+.headline-share p{}
+.feature-content{
+  overflow: hidden;
+  text-align: center;
+  margin: 150px 0;
+}
+.feature-content>div{
+  float: left;
+  width: 50%;
+}
+.feature-mockup{
+}
+.feature-mockup img{}
+.feature-about{
+  padding: 0 70px;
+  padding-top: 70px;
+  text-align: center;
+}
+.feature-about img{}
+.feature-about h2{
+  font-size: 30px;
+}
+.feature-about p{}
+
+/* #################### Section : vision ################### */
+.vision-inner{}
+.vision-content{
+  overflow: hidden;
+  padding-top: 20px;
+}
+.vision-content>div{
+  float: left;
+  width: 33.333%;
+  height: 400px;
+}
+.vision-item-desc{
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vision-item-headline{
+  width: 60%;
+}
+.vision-item-headline h3{
+  font-size: 28px;
+}
+.vision-item-headline hr{
+  display: inline-block;
+  width: 50px;
+  height: 3px;
+  border:none;
+  background-color: #9b59b6;;
+}
+.vision-item-headline p{}
+.vision-item-photo{
+
+}
+.vision-item-photo img{
+  object-fit: cover;
+  width: 100%;
+  height: inherit;
+}
+
+/* #################### Section : FAQ ################### */
+.faq{}
+.faq-inner{
+  width: 1300px;
+  margin: auto;
+}
+.headline-share{}
+.faq-content{
+  overflow: hidden;
+}
+.faq-content >div{
+  float: left;
+  width: 50%;
+  padding: 25px;
+  min-height: 700px;
+  /* tab메뉴때문에 옆에 박스가 덜컹거리는것을 방지할수 잇다 */
+}
+.faq-accordion{}
+.faq-item{}
+.faq-desc{}
+/* awards-content */
+.awards-content{
+  text-align: center;
+}
+.award-image{
+  position: relative;
+  margin-bottom: 50px;
+}
+.award-image:before{ /*img에는 가상태그 못가져서 디비로 감쌋다*/
+  content:"december 9, 2020";
+  position: absolute;
+  width: 185px;
+  height: 50px;
+  background-color: #000;
+  color: #ddd;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 50px;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.award-image img{
+  width: 100%;
+}
+.awards-content h2{
+  font-size: 36px;
+  color: #e7a300;
+} 
+.awards-content p{
+  margin-bottom: 40px;
+} 
+.btn-awards{
+  /* display: inline-block;  padding으로 줄거니까 필요없쟌아. */
+  padding: 13px 20px;
+  border: 1px solid #000;
+  text-transform: uppercase;
+  transition: .35s;
+  font-size: 14px;
+}
+.btn-awards:hover{
+  background-color: crimson;
+  color: #fff;
+  border-color: transparent; /* 1픽셀이 없어지니까 덜컥거리니까 none하면 안돼. */
+}
+/* accordion */
+
+.faq-accordion{}
+.faq-item{
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.faq-item.active {
+  border: 1px solid #7dbeff;
+}
+.faq-item.active .faq-title:before{
+  color: #7dbeff;
+  transform: rotate(90deg);
+}
+.faq-item > div{
+  padding: 15px;
+}
+.faq-title{
+  cursor: pointer;
+  color: #4c98e4;
+}
+.faq-title:before{
+  content: "\f105";
+  font-family: fontawesome;
+  color: #444;
+  float: right;
+}
+.faq-desc{display: none;}
+
+/* #################### Section : review ################### */
+.review{
+  background-color: #f9f9f9;
+}
+.review-inner{
+  width: 1300px;
+  margin: auto;
+}
+.headline-share{}
+.headline-share p{
+ font-size: 16px;
+}
+.review-content{
+  width: 900px;
+  text-align: center;
+  margin: auto;
+}
+.slogan{
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+.review-slider{
+ outline: none;
+}
+.review-slider>div{}
+.review-slider p{
+  padding: 0 70px;
+}
+.review-slider span{
+  display: block;
+  font-weight: bold;
+}
+
+/* slick.js */
+
+.review-slider .slick-dots li button:before {
+  opacity: 1;
+  transform: scale(0.7);
+}
+.review-slider .slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: transparent;
+  border-radius: 50%;
+  border: 1px solid #000;
+  transform: scale(0.7);
+  top: -2px;
+}
+.review-slider .slick-prev:before,
+.review-slider .slick-next:before{
+  content:"\f104";
+  font-family: 'fontawesome';
+  font-size: 30px;
+  line-height: 1;
+  opacity: 1;
+  color: #000;
+}
+.review-slider .slick-next:before{
+  transform:rotateY(180deg);
+  display: block; /*fontawesome 인라인요소라 트랜스폼이 안된다 */
+}
+/* #################### Section : focus ################### */
+.focus .headline-share{
+  margin-bottom: 100px;
+}
+.focus-inner{
+  width: 1300px;
+  margin: auto;
+}
+.focus-content{
+  text-align: center;
+}
+.focus-content>div{
+  display: inline-block;
+  width: 30%;
+
+}
+.focus-item{
+  padding: 0 50px;
+}
+.focus-item img{
+  width: 80px;
+  filter: invert(86%) sepia(44%) saturate(1125%) hue-rotate(299deg) brightness(110%) contrast(96%);
+
+}
+.focus-item h3{}
+.focus-item i{
+  transform: rotate(45deg);
+  margin: 0;
+}
+.focus-item p{
+  margin: 0;
+}
+/* #################### Section : Guide ################### */
+.guide{
+  padding-top: 0;
+}
+.guide-inner{
+  width: 1300px;
+  margin: auto;
+}
+.guide-content{
+  overflow: hidden;
+}
+.guide-content >div{
+  float: left;
+}
+.guide-slider{
+  width: 40%;
+  text-align: center;
+}
+.slider-mockup{
+  display: inline-block; /* tac하기 위해서 인라인블럭줌 */
+  position: relative;
+}
+.round-mockup{
+}
+.mockup-slider{
+  position: absolute;
+  width: 85%;
+  height: 550px;
+  top: 51%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.mockup-slider .slick-dots {
+  bottom: 15px;
+}
+.mockup-slider .slick-dots li{
+  margin: 0;
+}
+/* guide video */
+/* modal창을 띄우고 내부에 스크롤제거한후 나오면 스크롤 생겨야한다. */
+.guide-video{
+  width: 60%;
+}
+.guide-video h1{
+  font-size: 38px;
+  text-transform: uppercase;
+}
+.guide-video h1 span{
+  color: #eb4d4b;
+}
+.guide-video h2{}
+.video-headline{}
+.video-headline img{
+  vertical-align: middle;
+  margin-top: -5px;
+}
+.video-headline h2{}
+.video-frame{
+  width: 530px;
+  height: 370px;
+  position: relative;
+  margin-top: 30px;
+}
+.video-frame img{
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.video-frame i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 80px;
+  color: #fff;
+  opacity: 0.5;
+}
+/* Modal */
+.video-modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  display:none;
+  /* x 클릭이 안되쟌아, z-index를 누구한테 줘야해? 부모에한테 줘야지*/
+  z-index: 100;
+}
+.xi-close-thin{
+  font-size: 50px;
+  color: #fff; 
+}
+.close-modal{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  
+}
+.video-modal iframe{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+/* #################### Section : News ################### */
+.new{
+  color: #f9f9f9;
+}
+.news-inner{
+  width: 1300px;
+  margin: auto;
+}
+.news-content{
+  margin-top: 50px;
+  overflow: hidden;
+  width: 95%;
+}
+.news-content>div{
+  float: left;
+  width: 50%;
+}
+.news-left{
+  position: relative;
+}
+.news-big{
+  width: 550px;
+  height: 550px;
+  margin: auto;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  transition: 0.5s;
+}
+.news-big img{
+ object-fit: cover;
+ width: inherit;
+ height: inherit;
+ 
+}
+.news-big:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.6);
+  width: 100%;
+  height: 100%;
+}
+.news-big:hover:before {
+  background: rgba(0,0,0,0.3);
+}
+.news-headline{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #fff;
+  width: 80%
+}
+.news-big h2{
+  font-size: 32px;
+}
+.news-right{}
+.date{
+  display: block;
+  font-size: 14px;
+}
+.news-big .btn-view{
+  background-color: #000;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.news-items>div{
+  display: inline-block;
+  margin-bottom: 50px;
+}
+.news-thum{
+  width: 280px;
+  cursor: pointer;
+}
+.news-thum:first-child{
+  margin-right: 40px;
+}
+.news-photo{
+  position: relative;
+  overflow: hidden;
+}
+.news-photo img{
+  display: block;
+  transition: 0.5s;
+}
+.news-photo:hover img{
+  transform: scale(1.1);
+}
+.news-photo span{}
+.badge{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 3px 5px;
+  background-color: #000;
+  font-size: 12px;
+  color: #fff;
+}
+.news-photo .hot{
+  background-color: crimson;
+}
+.news-thum .date{
+  display: block; /*small 태그는 인라인이쟌아. 마진 안되쟈나.*/
+  float: right;
+  margin-top: 20px;
+}
+.news-thum p{
+  margin: 0;
+  margin-top: 10px;
+}
+.btn-readmore{
+  background-color: #7b9acc;
+  color: #fff;
+  font-size: 14px;
+  display: block;
+  width: 180px;
+  margin:auto;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px;
+
+}
+/* #################### footer ################### */
+footer{
+  background: #21325b;
+  color: #fff;
+  font-size: 14px;
+}
+.footer-inner{
+  width: 1300px;
+  margin: auto;
+  padding: 60px 0;
+}
+.footer-content{
+  overflow: hidden;
+}
+.footer-content>div{
+  float: left;
+}
+.footer-logo{
+ width: 15%;
+}
+.copyright{
+  width: 85%;
+}
+.footer-logo img{
+  filter: grayscale();
+}
+.policy-sns{
+  border-bottom: 1px solid #32456e;
+}
+.policy{
+ width: 80%;
+}
+.policy span:nth-child(2){
+ display: block;
+ margin-bottom: 30px;
+}
+.policy span a{
+  color: #ddd;
+}
+.policy span em{
+ padding: 0 8px;
+ font-style: normal;
+}
+.policy-sns{
+  overflow: hidden;
+}
+.policy-sns>div{
+  float: left;
+ 
+}
+.sns{
+  width: 20%;
+ 
+}
+.sns a{
+  
+}
+.sns i{
+  color: #fff;
+  font-size: 15px;
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  background-color: #32456e;
+  text-align: center;
+  line-height: 25px;
+  margin: 1px;
+  transition: 0.5s;
+}
+.sns i:hover{
+  background-color: #000;
+}
+.address{
+ margin-top: 30px;
+}
+.address span{
+  display: block;
+}
+
+
+
+
+/* #################### go to top ################### */
+.btn-top{ /*xeicon fontawesome 모든요소 다 a에 준다.*/
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 5px;
+  background-color: rgba(0,0,0,.5);
+  color: #fff;
+  text-align: center;
+  line-height: 43px;
+  transition: 0.5s;
+  transform: translateY(100px);
+  opacity: 0;
+}
+.btn-top.active{
+  transform: translateY(0);
+  opacity: 1;
+
+}
+.gototop i:before{
+
+}
+
+/* animation */
+
+.ltr{
+  animation: ltr 0.5s linear both;
+}
+.rtl{
+  animation: rtl 0.5s linear both;
+}
+.utd{
+  animation: utd 0.5s linear both;
+}
+@keyframes wheele{
+  0%{
+    top: 10px;
+  }
+  50%{
+    top: 20px;
+  }
+  100%{
+    top: 10px;
+  }
+}
+@keyframes ltr{
+  0%{
+    transform: translateX(-100px);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+@keyframes rtl{
+  0%{
+    transform: translateX(100px);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+@keyframes utd{
+  0%{
+    transform: translateY(-50px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}

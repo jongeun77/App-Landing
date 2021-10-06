@@ -1,0 +1,381 @@
+
+@media (max-width:768px){
+  /* Defalut CSS */
+  body{
+    font-size: 16px;
+  }
+  section{
+    padding: 50px 15px;
+  }
+  /* ##################### Section : Welcome ##################### */
+  .welcome{
+    background-color: #f9f9f9;
+    height: 100vh;
+  }
+  .slideshow{ 
+    display: none;
+  }
+  .welcome-heading{
+    width: 100%;
+    transform: translate(-50%,-50%);
+    left: 50%;
+  }
+  .welcome-heading h1{
+    font-size: 40px;
+  }
+  .welcome-heading p{
+    font-size: 18px;
+    padding: 0 30px;
+  }
+  .mouse{
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 2px solid rgb(110, 110, 110,0.1);
+  }
+  .wheele{
+    background-color: rgb(110, 110, 110,0.1);
+  }
+  
+  
+  /* ##################### Header ##################### */
+  
+  Header{
+    width: 100%;
+  }
+  
+  .header-inner{
+    width: 100%;
+  }
+  .logo{
+    float: right;
+    margin-right: 20px;
+  }
+  .logo img{
+    margin-top: -7px; /* 이미지높이 조정위해서 이미지를 위로올림 */
+  }
+  .gnb{
+    float: none;
+    background-color: #f9f9f9;
+    position: fixed;
+    height: 100vh;
+    width: 250px;
+    top: 0;
+    left: -260px; /*초기상태*/
+    box-shadow: 3px 0 3px rgba(0,0,0,0.1);
+    padding-top: 70px;
+    padding-left: 15px;
+    transition: 0.5s;
+  }
+  .gnb.active{
+    left: 0;
+  }
+  .gnb a{
+   display: block;
+  }
+  /* trigger */
+  
+  .trigger{
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 25px;
+    left: 20px;
+    font-size: 28px;
+  }
+  .trigger:before{
+    content: '\e91c';
+    font-family: xeicon;
+  }
+  .trigger.active:before{
+    content: '\e9af';
+    font-family: xeicon;
+  }
+  
+ /* #################### Section : ceo-access################### */
+  .ceo-inner{
+    width: 100%;
+    text-align: center;
+  }
+  .ceo-content> div{
+    float: none;
+    width: 100%;
+  }
+  .ceo-right>div{
+    float: none;
+  }
+  .ceo-msg{
+    text-align: center;
+    width: 100%;
+  }
+  .ceo-photo{
+    width: 100%;
+  }
+  .access-inner{
+    width: 100%;
+    text-align: center;
+  }
+  .access-content>div{
+    float: none;
+    width: 100%;
+  }
+  .access-content h2{
+    font-size: 22px;
+  }
+  .access-left{
+    padding: 50px 0;
+  }
+  .btn-download img{
+    height: 45px;
+    margin-bottom: 50px;
+  }
+  .access-right img{
+    width: 100%;
+  }
+  /* #################### Section : banner ################### */
+  .banner{
+    background: linear-gradient(to right, #69acfe, #6eaefd);
+    padding: 50px 0;
+  }
+  .banner-inner{
+    width: 100%;
+  }
+  .banner-content>div{
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+  .tab-btn label{
+    width: 26%;
+    margin: 7px;
+  }
+  .tabs h3{
+    font-size: 28px;
+  }/* #################### Section : Feature ################### */
+  .feature-inner{
+    width: 100%;
+  }
+  .headline-share h1{
+    font-size: 30px;
+  }
+  .feature-content{
+    margin: 50px 0;
+  }
+  .feature-content>div{
+    float: none;
+    width: 100%;
+  }
+  .feature-mockup img{
+    width: 100%;
+  }
+  .feature-about h2{
+    font-size: 24px;
+  }
+  .feature-about{
+    padding: 0 20px;
+    padding-top: 70px;
+
+  }
+  /* Change order with Flex */
+  .feature-content.flex-order{
+    display: flex;
+    flex-direction: column;
+  }
+  .feature-content.flex-order> div:first-child{
+    order:2;
+  }
+  .feature-content.flex-order> div:last-child{
+    order:1;
+  }
+  /* ##################### Vision ##################### */
+
+  .vision-content>div{
+    float: none;
+    width: 100%;
+    height: auto;
+  }
+  .vision-item-desc{
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+  }
+  .vision-item-headline{
+    width: 100%;
+  }
+  /* #################### Section : FAQ ################### */
+
+  .faq-inner{
+    width: 100%;
+    margin-top: 50px;
+  }
+  .faq-content >div{
+    float: none;
+    width: 100%;
+    padding: 20px 0;
+    min-height: 0;
+  
+    /* tab메뉴때문에 옆에 박스가 덜컹거리는것을 방지할수 잇다 */
+  }
+  .awards-content h2{
+    font-size: 34px;
+  } 
+  /* #################### Section : review ################### */
+  .review{
+    background-color: #f9f9f9;
+  }
+  .review-inner{
+    width: 100%;
+  }
+  .headline-share p{
+  font-size: 16px;
+  }
+  .review-content{
+    width: 100%;
+  }
+  .slogan{
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .review-slider>div{}
+  .review-slider p{
+    padding: 0 20px;
+  }
+  .review-slider .slick-prev:before,
+  .review-slider .slick-next:before{
+    display:none;
+  }
+  /* #################### Section : focus ################### */
+  .focus{
+    margin-top: 70px;
+  }
+  .focus .headline-share h1{
+    font-size: 28px;
+  }
+  .focus .headline-share {
+    margin-bottom: 50px;
+  }
+  .focus-inner{
+    width: 100%;
+  }
+  .focus-content>div{
+    width: 100%;
+
+  }
+  .focus-item{
+    padding: 20px 20px;
+  }
+  .focus-item img{
+    width: 70px;
+  }
+
+
+  /* #################### Section : Guide ################### */
+
+  .guide-inner{
+    width: 100%;
+  }
+  .guide-content >div{
+    float: none;
+  }
+  .guide-slider{
+    width: 100%;
+  }
+
+  /* guide video */
+  /* modal창을 띄우고 내부에 스크롤제거한후 나오면 스크롤 생겨야한다. */
+  .guide-video{
+    margin-top: 50px;
+    width: 100%;
+  }
+  .guide-video h1{
+    font-size: 22px;
+  }
+  .guide-video h2{
+    font-size: 22px;
+  }
+  .video-headline img{
+    vertical-align: middle;
+    margin-top: -5px;
+    width: 30px;
+  }
+  .video-frame{
+    width: 100%;
+    height: 350px;
+  }
+  .video-modal iframe{
+    width: 100%;
+    height: 300px;
+    padding: 0 15px;
+  }
+  /* #################### Section : News ################### */
+
+  .news-inner{
+    width: 100%;
+  }
+  .news-content{
+    width: 100%;
+  }
+  .news-content>div{
+    float: none;
+    width: 100%;
+  }
+  .news-big{
+    width: 100%;
+    height: 450px;
+  }
+  .news-left{
+    margin-bottom: 15px;
+  }
+  .news-big h2{
+    font-size: 32px;
+  }
+  .news-thum{
+    width: 100%;
+  }
+  .news-photo {
+    display: block;
+  }
+  .news-photo img{
+    width: 100%;
+  }
+  .news-thum .date{
+    float: none;
+    margin-top: 5px;
+  }
+  .news-items>div{
+    margin-bottom: 5px;
+  }
+  /* #################### footer ################### */
+  footer{
+    padding: 40px 15px;
+  }
+  .footer-inner{
+    width: 100%;
+    text-align: center;
+  }
+  .footer-content>div{
+    float: none;
+    width: 100%;
+  }
+  .footer-logo{
+  width: 100%;
+  }
+  .policy{
+  width: 100%;
+  margin: 10px 0;
+  }
+  .policy-sns{
+    padding-bottom: 10px;
+  }
+  .policy-sns>div{
+    float: none;
+  }
+  .sns{
+    width: 100%;
+    float: none;
+  }
+
+}/* end */
+  
