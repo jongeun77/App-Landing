@@ -378,4 +378,33 @@
   }
 
 }/* end */
-  
+  @media(max-width:1300px){
+    
+    .gnb{
+      margin-right: 50px;
+    }
+    .welcome-heading{
+      margin-top: 20px;
+    }
+    .header-inner{
+      width: 1200px;
+    }
+   .ceo-access{
+     padding: 0 50px;
+   }
+   .ceo-inner,.access-inner,.banner-inner,.feature-inner,.vision-inner,.faq-inner,.review-inner,
+   .focus-inner,.guide-inner,.news-inner,.footer-inner{
+     width: 100%;
+   }
+   .btn-top {
+    position: fixed;
+    right: 40px;
+    bottom: 20px;
+   }
+   .news-thum:first-child {
+    margin-right: 20px;
+  }
+  .footer-logo{
+    text-align: center;
+  }
+}

@@ -53,6 +53,7 @@ body{
   margin: 0; 
   background-color: #fff;
   color: #222;
+  /* overflow-x: hidden; */
 }
 body.active{
   overflow: hidden;
@@ -167,10 +168,10 @@ header.active{
 .mouse{
   width: 32px;
   height: 45px;
-  border: 2px solid #fff;
+  border: 2px solid rgb(201, 199, 199,0.5);
   position: absolute;
   bottom:100px;
-  left: 250px;
+  left: 550px;
   border-radius: 30px;
 }
 .wheele{
